@@ -1,0 +1,562 @@
+object LoginNDFrame: TLoginNDFrame
+  Size.Width = 409.000000000000000000
+  Size.Height = 713.000000000000000000
+  Size.PlatformDefault = False
+  object LayBigBottomContainer: TLayout
+    Align = Bottom
+    Position.Y = 174.000000000000000000
+    Size.Width = 409.000000000000000000
+    Size.Height = 539.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object LbTitle: TLabel
+      Align = MostTop
+      AutoSize = True
+      StyledSettings = []
+      Margins.Bottom = 40.000000000000000000
+      Size.Width = 409.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'SF UI Display Thin'
+      TextSettings.Font.Size = 35.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Login'
+      TabOrder = 0
+    end
+    object Layout2: TLayout
+      Align = Top
+      Position.Y = 187.000000000000000000
+      Size.Width = 409.000000000000000000
+      Size.Height = 278.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object GridPanelLayout1: TGridPanelLayout
+        Align = HorzCenter
+        Position.X = 60.000000000000000000
+        Size.Width = 289.000000000000000000
+        Size.Height = 278.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = Button3
+            Row = 4
+          end
+          item
+            Column = 0
+            Control = RectBtnLogin
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = Label4
+            Row = 3
+          end
+          item
+            Column = 0
+            Control = RectBtnSignup
+            Row = 2
+          end
+          item
+            Column = 0
+            Control = Text2
+            Row = 1
+          end
+          item
+            Column = 0
+            Control = CbStoreCredentials
+            Row = 5
+          end>
+        RowCollection = <
+          item
+            Value = 14.285714285714280000
+          end
+          item
+            Value = 14.285714285714280000
+          end
+          item
+            Value = 14.285714285714280000
+          end
+          item
+            Value = 14.285714285714280000
+          end
+          item
+            Value = 14.285714285714280000
+          end
+          item
+            Value = 14.285714285714280000
+          end
+          item
+            Value = 14.285714285714280000
+          end
+          item
+            SizeStyle = Auto
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object Button3: TButton
+          Action = LoginByQRCodeAct
+          Anchors = []
+          Enabled = True
+          StyledSettings = []
+          ImageIndex = -1
+          Position.X = 45.000000000000000000
+          Position.Y = 171.130966186523400000
+          Size.Width = 199.000000000000000000
+          Size.Height = 15.166667938232420000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          TextSettings.Font.Family = 'SF UI Display'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF8E305D
+          Visible = False
+        end
+        object RectBtnLogin: TRectangle
+          Tag = 1
+          Anchors = []
+          Fill.Color = claWhite
+          Position.X = 99.500000000000000000
+          Position.Y = 5.857143402099610000
+          Size.Width = 90.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 14.000000000000000000
+          YRadius = 14.000000000000000000
+          object TxtBtnLogin: TText
+            Align = Contents
+            Size.Width = 90.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'LOGIN'
+            TextSettings.Font.Family = 'SF UI Display'
+            TextSettings.FontColor = xFF8F2E5D
+            TextSettings.WordWrap = False
+            OnClick = TxtBtnLoginClick
+          end
+        end
+        object Label4: TText
+          Align = Client
+          Size.Width = 289.000000000000000000
+          Size.Height = 39.714286804199220000
+          Size.PlatformDefault = False
+          Text = 'Forgot password?'
+          TextSettings.Font.Family = 'SF UI Display'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {04040000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+        object RectBtnSignup: TRectangle
+          Tag = 1
+          Anchors = []
+          Enabled = False
+          Fill.Color = claWhite
+          Position.X = 99.500000000000000000
+          Position.Y = 85.285720825195320000
+          Size.Width = 90.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 14.000000000000000000
+          YRadius = 14.000000000000000000
+          object TxtBtnSignup: TText
+            Align = Contents
+            Size.Width = 90.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'SIGNUP'
+            TextSettings.Font.Family = 'SF UI Display'
+            TextSettings.FontColor = xFF8F2E5D
+            TextSettings.WordWrap = False
+          end
+        end
+        object Text2: TText
+          Anchors = []
+          Position.X = 119.500000000000000000
+          Position.Y = 45.857143402099610000
+          Size.Width = 50.000000000000000000
+          Size.Height = 27.428571701049800000
+          Size.PlatformDefault = False
+        end
+        object CbStoreCredentials: TCheckBox
+          Anchors = []
+          StyledSettings = [Style]
+          Position.X = 70.500000000000000000
+          Position.Y = 210.928588867187500000
+          Size.Width = 148.000000000000000000
+          Size.Height = 15.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Remember me'
+          TextSettings.Font.Family = 'SF UI Display'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+        end
+      end
+    end
+    object edAddress: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 320.000000000000000000
+      Position.Y = 40.000000000000000000
+      Visible = False
+    end
+    object LayLoginEdits: TLayout
+      Align = MostTop
+      Position.Y = 82.000000000000000000
+      Size.Width = 409.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object Layout4: TLayout
+        Align = Client
+        Padding.Left = 20.000000000000000000
+        Padding.Top = 1.000000000000000000
+        Padding.Right = 60.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 105.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object edUsername: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          Position.X = 20.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Other]
+        end
+        object edPassword: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          Password = True
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          Position.X = 20.000000000000000000
+          Position.Y = 61.000000000000000000
+          Margins.Top = 38.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Other]
+          object ClearEditButton1: TClearEditButton
+            CanFocus = False
+            Cursor = crArrow
+            Size.Width = 28.000000000000000000
+            Size.Height = 18.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'clear'
+          end
+        end
+      end
+      object Layout3: TLayout
+        Align = Left
+        Padding.Left = 60.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 105.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Label2: TLabel
+          Align = Top
+          AutoSize = True
+          StyledSettings = []
+          Margins.Top = 8.000000000000000000
+          Position.X = 60.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 69.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'SF UI Display'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.VertAlign = Trailing
+          Text = 'Username'
+          TabOrder = 1
+        end
+        object Label3: TLabel
+          Align = Top
+          AutoSize = True
+          StyledSettings = []
+          Margins.Top = 41.000000000000000000
+          Position.X = 60.000000000000000000
+          Position.Y = 66.000000000000000000
+          Size.Width = 69.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'SF UI Display'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.VertAlign = Trailing
+          Text = 'Password'
+          TabOrder = 0
+        end
+      end
+    end
+    object LayForgot: TLayout
+      Align = Top
+      Position.Y = 87.000000000000000000
+      Size.Width = 439.000000000000000000
+      Size.Height = 226.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      TabOrder = 5
+      object Layout5: TLayout
+        Align = Top
+        Size.Width = 439.000000000000000000
+        Size.Height = 226.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Layout6: TLayout
+          Align = Left
+          Padding.Left = 40.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 226.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label5: TLabel
+            Align = Top
+            AutoSize = True
+            StyledSettings = []
+            Margins.Top = 5.000000000000000000
+            Position.X = 40.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 81.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'SF UI Display Regular'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.VertAlign = Trailing
+            Text = 'Username'
+            TabOrder = 2
+          end
+          object Label6: TLabel
+            Align = Top
+            AutoSize = True
+            StyledSettings = []
+            Margins.Top = 7.000000000000000000
+            Position.X = 40.000000000000000000
+            Position.Y = 61.000000000000000000
+            Size.Width = 81.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'SF UI Display Regular'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.VertAlign = Trailing
+            Text = 'Email'
+            TabOrder = 0
+          end
+          object Label7: TLabel
+            Align = Top
+            AutoSize = True
+            StyledSettings = []
+            Margins.Top = 5.000000000000000000
+            Position.X = 40.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 81.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'SF UI Display Regular'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.VertAlign = Trailing
+            Text = 'or'
+            TabOrder = 1
+          end
+        end
+        object Layout7: TLayout
+          Align = Client
+          Padding.Top = 1.000000000000000000
+          Padding.Right = 40.000000000000000000
+          Size.Width = 318.000000000000000000
+          Size.Height = 226.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object EdForgotUsername: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 1
+            Password = True
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            Position.Y = 7.000000000000000000
+            Margins.Top = 6.000000000000000000
+            Size.Width = 278.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Enter username here'
+            StyledSettings = [Family, Other]
+            object ClearEditButton2: TClearEditButton
+              CanFocus = False
+              Cursor = crArrow
+              Size.Width = 28.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'clear'
+            end
+          end
+          object EdForgotEmail: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Password = True
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            Position.Y = 62.000000000000000000
+            Margins.Top = 33.000000000000000000
+            Size.Width = 278.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Enter email address here'
+            StyledSettings = [Family, Other]
+            object ClearEditButton3: TClearEditButton
+              CanFocus = False
+              Cursor = crArrow
+              Size.Width = 28.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'clear'
+            end
+          end
+        end
+      end
+      object Button5: TButton
+        Align = Horizontal
+        StyledSettings = [Family, Size]
+        Margins.Left = 120.000000000000000000
+        Margins.Right = 120.000000000000000000
+        Position.X = 120.000000000000000000
+        Position.Y = 136.000000000000000000
+        Size.Width = 199.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'SEND CONFIRMATION'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF8E305D
+      end
+      object Button6: TButton
+        Align = Horizontal
+        StyledSettings = [Family, Size]
+        Margins.Left = 160.000000000000000000
+        Margins.Right = 160.000000000000000000
+        Position.X = 160.000000000000000000
+        Position.Y = 180.000000000000000000
+        Size.Width = 119.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'CANCEL'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF8E305D
+      end
+    end
+    object Text1: TText
+      Align = Bottom
+      Position.Y = 464.000000000000000000
+      Size.Width = 409.000000000000000000
+      Size.Height = 75.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Position.X = 376.000000000000000000
+    Position.Y = 304.000000000000000000
+    TabOrder = 5
+    Visible = False
+  end
+  object AniIndicator1: TAniIndicator
+    Align = Center
+    Size.Width = 439.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+  end
+  object edLocation: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    Position.X = 296.000000000000000000
+    Position.Y = 136.000000000000000000
+    Visible = False
+  end
+  object ActionList1: TActionList
+    Left = 368
+    Top = 16
+    object LoginAct: TAction
+      Text = 'LOGIN'
+    end
+    object LoginAgainAct: TAction
+      Text = 'Login Again'
+    end
+    object DoneAct: TAction
+      Text = 'Done'
+    end
+    object LoginByQRCodeAct: TAction
+      Text = 'LOGIN WITH QR CODE'
+      OnExecute = LoginByQRCodeActExecute
+    end
+    object LoadCredentialsNowAct: TAction
+      Text = 'Load Now'
+    end
+    object SaveCredentialsAct: TAction
+      Text = 'Save now'
+    end
+    object SignupAct: TAction
+      Text = 'SIGNUP'
+    end
+    object ForgotPasswordAct: TAction
+      Text = 'Forgot password?'
+      OnExecute = ForgotPasswordActExecute
+    end
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 88
+    Top = 16
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    BaseURL = 'http://impactvision.co.uk/iga/api/public'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    UserAgent = 'yzAccess RESTClient/1.0'
+    Left = 184
+    Top = 16
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Resource = 'login'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 272
+    Top = 16
+  end
+end

@@ -1,0 +1,101 @@
+object NotificationItemFrm: TNotificationItemFrm
+  Size.Width = 659.000000000000000000
+  Size.Height = 86.000000000000000000
+  Size.PlatformDefault = False
+  object Layout43: TLayout
+    Align = Top
+    Margins.Right = 8.000000000000000000
+    Size.Width = 651.000000000000000000
+    Size.Height = 89.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object ItemImgSlot: TRectangle
+      Align = Left
+      Fill.Bitmap.WrapMode = TileStretch
+      Fill.Kind = Bitmap
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+    end
+    object Layout44: TLayout
+      Align = Client
+      Size.Width = 512.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object TxtTop: TText
+        Align = Top
+        Margins.Top = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 512.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Allison'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+      end
+      object TxtBottom: TText
+        Align = Bottom
+        Position.Y = 65.000000000000000000
+        Size.Width = 512.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        Text = '12 hours ago'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claDarkgray
+        TextSettings.HorzAlign = Leading
+      end
+      object TxtMiddle: TText
+        Align = Client
+        Size.Width = 512.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Samsung Galaxy S8'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claGray
+        TextSettings.HorzAlign = Leading
+      end
+    end
+    object Circle15: TCircle
+      Align = Right
+      Fill.Color = xFF73BDC5
+      Margins.Bottom = 25.000000000000000000
+      Position.X = 601.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 64.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Stroke.Thickness = 0.000000000000000000
+      object TxtName: TText
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'A'
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claWhite
+      end
+      object FromImgSlot: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end

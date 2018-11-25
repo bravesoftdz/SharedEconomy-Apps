@@ -1,0 +1,167 @@
+object ChatItemFrm: TChatItemFrm
+  Margins.Bottom = 5.000000000000000000
+  Size.Width = 671.000000000000000000
+  Size.Height = 103.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle1: TRectangle
+    Align = Contents
+    ClipChildren = True
+    Fill.Color = claWhitesmoke
+    Margins.Left = 4.000000000000000000
+    Margins.Top = 2.000000000000000000
+    Margins.Right = 4.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Size.Width = 663.000000000000000000
+    Size.Height = 99.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.000000000000000000
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+  end
+  object Layout43: TLayout
+    Align = Client
+    Margins.Right = 8.000000000000000000
+    Size.Width = 663.000000000000000000
+    Size.Height = 103.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object RectItemPic: TRectangle
+      Align = Left
+      Fill.Bitmap.WrapMode = TileStretch
+      Fill.Kind = Bitmap
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 87.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+    end
+    object Layout44: TLayout
+      Align = Client
+      Size.Width = 511.000000000000000000
+      Size.Height = 103.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object TxtOwnerName: TText
+        Align = Top
+        Margins.Top = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 511.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Allison'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        object Layout3D1: TLayout3D
+          Height = 4.000000000000000000
+          Width = 5.000000000000000000
+        end
+      end
+      object TxtItemAge: TText
+        Align = Top
+        Position.Y = 74.000000000000000000
+        Size.Width = 511.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        Text = '12 hours ago'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claDarkgray
+        TextSettings.HorzAlign = Leading
+        object Layout3D2: TLayout3D
+          Height = 4.000000000000000000
+          Width = 5.000000000000000000
+        end
+      end
+      object TxtItemName: TText
+        Align = Top
+        Position.Y = 32.000000000000000000
+        Size.Width = 511.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Samsung Galaxy S8'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claGray
+        TextSettings.HorzAlign = Leading
+        object Layout3D3: TLayout3D
+          Height = 4.000000000000000000
+          Width = 5.000000000000000000
+        end
+      end
+      object TxtMessage: TText
+        Align = Top
+        Position.Y = 53.000000000000000000
+        Size.Width = 511.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Is the item still available for renting?'
+        TextSettings.FontColor = claGray
+        TextSettings.HorzAlign = Leading
+        object Layout3D4: TLayout3D
+          Height = 4.000000000000000000
+          Width = 5.000000000000000000
+        end
+      end
+    end
+    object Layout1: TLayout
+      Align = Right
+      Position.X = 600.000000000000000000
+      Size.Width = 63.000000000000000000
+      Size.Height = 103.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Circle15: TCircle
+        Align = Client
+        Fill.Color = xFF73BDC5
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 63.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 0.000000000000000000
+        object TxtOwnerInital: TText
+          Align = Client
+          Size.Width = 63.000000000000000000
+          Size.Height = 58.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'A'
+          TextSettings.Font.Size = 22.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object Layout2: TLayout
+        Align = Top
+        Margins.Top = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 63.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object GSentReceived: TGlyph
+          Align = Left
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Images = DataModule1.SESpecificImages
+        end
+        object GReadReplied: TGlyph
+          Align = Right
+          Position.X = 38.000000000000000000
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Images = DataModule1.SESpecificImages
+        end
+      end
+    end
+  end
+end

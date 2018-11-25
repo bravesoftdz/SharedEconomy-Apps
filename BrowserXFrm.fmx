@@ -1,0 +1,29 @@
+object BrowserFrm: TBrowserFrm
+  Size.Width = 508.000000000000000000
+  Size.Height = 699.000000000000000000
+  Size.PlatformDefault = False
+  object WebBrowser: TWebBrowser
+    Align = Client
+    Size.Width = 508.000000000000000000
+    Size.Height = 666.000000000000000000
+    Size.PlatformDefault = False
+    OnDidFinishLoad = WebBrowserDidFinishLoad
+  end
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 508.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object SbClose: TSpeedButton
+      Align = Left
+      AutoTranslate = False
+      ImageIndex = 0
+      Size.Width = 33.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cleareditbutton'
+      OnClick = SbCloseClick
+    end
+  end
+end

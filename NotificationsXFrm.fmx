@@ -1,0 +1,38 @@
+object NotificationsFrm: TNotificationsFrm
+  Size.Width = 491.000000000000000000
+  Size.Height = 725.000000000000000000
+  Size.PlatformDefault = False
+  object LayHeader: TLayout
+    Align = MostTop
+    Size.Width = 491.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object TxtHeader: TText
+      Align = Contents
+      Size.Width = 491.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Notifications'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object SpeedButton1: TSpeedButton
+      Align = Left
+      Size.Width = 48.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowlefttoolbutton'
+      OnClick = SpeedButton1Click
+    end
+  end
+  object VertScrollBox1: TVertScrollBox
+    Align = Client
+    Size.Width = 491.000000000000000000
+    Size.Height = 675.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 491.000000000000000000
+    Viewport.Height = 675.000000000000000000
+  end
+end

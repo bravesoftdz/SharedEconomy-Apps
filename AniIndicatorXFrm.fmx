@@ -1,0 +1,20 @@
+object AniIndicatorFrm: TAniIndicatorFrm
+  Size.Width = 437.000000000000000000
+  Size.Height = 392.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle1: TRectangle
+    Align = Contents
+    Fill.Color = claDarkgray
+    Opacity = 0.800000011920928900
+    Size.Width = 437.000000000000000000
+    Size.Height = 392.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.000000000000000000
+  end
+  object AniIndicator1: TAniIndicator
+    Align = Center
+    Size.Width = 72.000000000000000000
+    Size.Height = 69.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

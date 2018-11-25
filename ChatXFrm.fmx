@@ -1,0 +1,47 @@
+object ChatFrm: TChatFrm
+  Size.Width = 518.000000000000000000
+  Size.Height = 559.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 518.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Text1: TText
+      Align = Contents
+      Size.Width = 518.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Chats'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      object SpeedButton2: TSpeedButton
+        Align = Left
+        Size.Width = 48.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'arrowlefttoolbutton'
+        OnClick = SpeedButton2Click
+      end
+    end
+    object SpeedButton1: TSpeedButton
+      Align = Right
+      Images = DataModule1.SESpecificImages
+      Position.X = 468.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object ChatScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 518.000000000000000000
+    Size.Height = 509.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    ShowScrollBars = False
+    Viewport.Width = 518.000000000000000000
+    Viewport.Height = 509.000000000000000000
+  end
+end

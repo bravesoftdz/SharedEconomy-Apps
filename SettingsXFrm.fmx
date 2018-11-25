@@ -1,0 +1,1467 @@
+object SettingsFrm: TSettingsFrm
+  Align = Client
+  Size.Width = 392.000000000000000000
+  Size.Height = 672.000000000000000000
+  Size.PlatformDefault = False
+  object LayHeader: TLayout
+    Align = MostTop
+    Size.Width = 392.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object TxtHeader: TText
+      Align = Contents
+      Size.Width = 392.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Settings'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      object RectCurrentScorring: TRectangle
+        Align = Right
+        Fill.Color = claWhite
+        Margins.Top = 6.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 6.000000000000000000
+        Position.X = 304.000000000000000000
+        Position.Y = 6.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claDarkgray
+        XRadius = 19.000000000000000000
+        YRadius = 19.000000000000000000
+        object ShadowEffect1: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.100000001490116100
+          Opacity = 0.100000001490116100
+          ShadowColor = claBlack
+        end
+        object Circle1: TCircle
+          Align = Left
+          Fill.Color = xFFA3CE71
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 6.000000000000000000
+          Margins.Bottom = 6.000000000000000000
+          Position.X = 2.000000000000000000
+          Position.Y = 6.000000000000000000
+          Size.Width = 38.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claDarkgray
+          object TxtSmallUsernameFirstCap: TText
+            Align = Client
+            Size.Width = 38.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'A'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object TxtScoreSmall: TText
+          Align = Right
+          Position.X = 23.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          Text = '64'
+          TextSettings.Font.Size = 17.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFA3CE71
+        end
+      end
+    end
+    object SpeedButton1: TSpeedButton
+      Align = Left
+      Images = DataModule1.SESpecificImages
+      ImageIndex = 39
+      Size.Width = 48.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowlefttoolbutton'
+      OnClick = SpeedButton1Click
+    end
+  end
+  object TcSettings: TTabControl
+    Align = Client
+    Size.Width = 392.000000000000000000
+    Size.Height = 622.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = None
+    OnChange = TcSettingsChange
+    Sizes = (
+      392s
+      622s
+      392s
+      622s
+      392s
+      622s
+      392s
+      622s
+      392s
+      622s
+      392s
+      622s
+      392s
+      622s
+      392s
+      622s
+      392s
+      622s
+      392s
+      622s
+      392s
+      622s
+      392s
+      622s)
+    object MainTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Settings'
+      ExplicitSize.cx = 65.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ListBox1: TListBox
+        Align = Client
+        Size.Width = 392.000000000000000000
+        Size.Height = 622.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ShowScrollBars = False
+        DisableFocusEffect = True
+        ItemHeight = 48.000000000000000000
+        Images = DataModule1.SESpecificImages
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 388.000000000000000000
+        Viewport.Height = 618.000000000000000000
+        object lbighProfile: TListBoxGroupHeader
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claGray
+          StyledSettings = [Family, Style, Other]
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'PROFILE'
+        end
+        object LbiPhoto: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Accessory = aMore
+          ImageIndex = 0
+          Position.Y = 48.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 2
+          Text = 'Photo'
+          OnClick = LbiPhotoClick
+          object Circle15: TCircle
+            Align = Left
+            Fill.Color = xFF73BDC5
+            Margins.Top = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.Y = 2.000000000000000000
+            Size.Width = 50.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            Stroke.Thickness = 0.000000000000000000
+            object TxtName: TText
+              Align = Client
+              Size.Width = 50.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'A'
+              TextSettings.Font.Size = 22.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+            object ImgUserPhoto: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Client
+              Size.Width = 50.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+        end
+        object lbiName: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = 'Santa Claus'
+          ItemData.Accessory = aMore
+          ImageIndex = 9
+          Position.Y = 96.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 4
+          Text = 'Full Name'
+          OnClick = lbiNameClick
+        end
+        object LbiEmail: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = 'name.surname@domain.com'
+          ItemData.Accessory = aMore
+          ImageIndex = 10
+          Position.Y = 144.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 5
+          Text = 'Email'
+          OnClick = LbiEmailClick
+        end
+        object LbiPhoneNumber: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = '+44 (0) 7479 123 423'
+          ItemData.Accessory = aMore
+          ImageIndex = 31
+          Position.Y = 192.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 3
+          Text = 'Phone number'
+          OnClick = LbiPhoneNumberClick
+        end
+        object LbiLocation: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = 'Bucharest'
+          ItemData.Accessory = aMore
+          ImageIndex = 11
+          Position.Y = 240.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 6
+          Text = 'Location'
+          OnClick = LbiLocationClick
+        end
+        object LbiAboutMe: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = 'Shinny happy people...'
+          ItemData.Accessory = aMore
+          ImageIndex = 12
+          Position.Y = 288.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 7
+          Text = 'Bio / About me'
+          OnClick = LbiAboutMeClick
+        end
+        object LbiPhotoID: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Accessory = aMore
+          ImageIndex = 18
+          Position.Y = 336.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 1
+          Text = 'Photo ID/Driver License'
+          OnClick = LbiPhotoIDClick
+        end
+        object LbiPass: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Accessory = aMore
+          ImageIndex = 13
+          Position.Y = 384.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 8
+          Text = 'Password'
+          OnClick = LbiPassClick
+        end
+        object ListBoxItem7: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Accessory = aMore
+          ImageIndex = 14
+          Position.Y = 432.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 11
+          Text = 'Notifications'
+          OnClick = ListBoxItem7Click
+        end
+        object ListBoxGroupHeader6: TListBoxGroupHeader
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claGray
+          StyledSettings = [Family, Style, Other]
+          Position.Y = 480.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 12
+          Text = 'USER INTERFACE'
+        end
+        object LbiTheme: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = 'Default'
+          ItemData.Accessory = aMore
+          ImageIndex = 38
+          Position.Y = 528.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 10
+          Text = 'Theme'
+          OnClick = LbiThemeClick
+        end
+        object LbiLanguage: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = 'Default'
+          ItemData.Accessory = aMore
+          ImageIndex = 36
+          Position.Y = 576.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 9
+          Text = 'Language'
+          OnClick = LbiLanguageClick
+        end
+        object ListBoxGroupHeader2: TListBoxGroupHeader
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claGray
+          StyledSettings = [Family, Style, Other]
+          Position.Y = 624.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 13
+          Text = 'SUPPORT'
+        end
+        object ListBoxItem8: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Accessory = aMore
+          ImageIndex = 16
+          Position.Y = 672.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 14
+          Text = 'Help'
+          OnClick = ListBoxItem8Click
+        end
+        object ListBoxItem9: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Accessory = aMore
+          ImageIndex = 15
+          Position.Y = 720.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 15
+          Text = 'Terms and Conditions'
+          OnClick = ListBoxItem9Click
+        end
+        object ListBoxItem10: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Accessory = aMore
+          ImageIndex = 17
+          Position.Y = 768.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 16
+          Text = 'Privacy Policy'
+          OnClick = ListBoxItem10Click
+        end
+        object ListBoxGroupHeader5: TListBoxGroupHeader
+          Position.Y = 816.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 19
+        end
+        object ListBoxItem17: TListBoxItem
+          Position.Y = 864.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 17
+          object Rectangle26: TRectangle
+            Align = Top
+            Fill.Color = xFFFF3F55
+            Margins.Left = 20.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Position.X = 20.000000000000000000
+            Size.Width = 348.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            XRadius = 25.000000000000000000
+            YRadius = 25.000000000000000000
+            object Text46: TText
+              Align = Client
+              Size.Width = 348.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Log out'
+              TextSettings.Font.Family = 'Arial'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+              TextSettings.WordWrap = False
+              OnClick = Text46Click
+            end
+          end
+        end
+        object ListBoxItem21: TListBoxItem
+          Position.Y = 912.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 18
+          object TxtVersion: TText
+            Align = Top
+            Size.Width = 388.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'v1.0.32'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claGray
+          end
+        end
+      end
+    end
+    object ChangeNameTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Change Name'
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object EdNewName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        StyleLookup = 'editstyle'
+        TabOrder = 0
+        TextSettings.Font.Size = 18.000000000000000000
+        Position.Y = 30.000000000000000000
+        Margins.Top = 30.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Enter your full name'
+        StyledSettings = [Family, Style, FontColor]
+        OnChangeTracking = EdNewNameChangeTracking
+      end
+      object Rectangle1: TRectangle
+        Align = Top
+        Fill.Color = xFFFF3F55
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 98.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 25.000000000000000000
+        YRadius = 25.000000000000000000
+        object TxtBtnSave: TText
+          Align = Client
+          Enabled = False
+          Size.Width = 352.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Save'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.WordWrap = False
+          OnClick = TxtBtnSaveClick
+        end
+      end
+    end
+    object EmailTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Change Email'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object EdNewEmailAddress: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        StyleLookup = 'clearingeditstyle'
+        TabOrder = 0
+        TextSettings.Font.Size = 18.000000000000000000
+        Position.Y = 78.000000000000000000
+        Margins.Top = 30.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'New email [email@domain.com]'
+        StyledSettings = [Family, Style, FontColor]
+        OnChangeTracking = EdNewEmailAddressChangeTracking
+      end
+      object RectBtnSaveEmail: TRectangle
+        Align = Top
+        Enabled = False
+        Fill.Color = xFFFF3F55
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 146.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 25.000000000000000000
+        YRadius = 25.000000000000000000
+        object Text1: TText
+          Align = Client
+          Size.Width = 352.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Save'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.WordWrap = False
+          OnClick = Text1Click
+        end
+      end
+      object Text3: TText
+        Align = Top
+        Margins.Left = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Size.Width = 372.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Current email: '
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.HorzAlign = Leading
+        object TxtCurrentEmail: TText
+          Align = Right
+          Position.X = 2.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object LocationTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Change Location'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout2: TLayout
+        Align = Bottom
+        Position.Y = 472.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 150.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Rectangle3: TRectangle
+          Align = Top
+          Fill.Color = xFFFF3F55
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 25.000000000000000000
+          YRadius = 25.000000000000000000
+          object Text4: TText
+            Align = Client
+            Size.Width = 352.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Set location'
+            TextSettings.Font.Family = 'Arial'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.WordWrap = False
+            OnClick = Text4Click
+          end
+        end
+        object Layout3: TLayout
+          Align = Bottom
+          Margins.Top = 10.000000000000000000
+          Position.Y = 82.000000000000000000
+          Size.Width = 392.000000000000000000
+          Size.Height = 68.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object TxtApprox: TText
+            Align = Left
+            Margins.Left = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 19.000000000000000000
+            Size.Width = 305.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Use approximate location'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.HorzAlign = Leading
+          end
+          object Switch1: TSwitch
+            Align = Right
+            IsChecked = False
+            Margins.Top = 7.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 7.000000000000000000
+            Position.X = 304.000000000000000000
+            Position.Y = 26.000000000000000000
+            Size.Width = 78.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            OnSwitch = Switch1Switch
+          end
+          object TrackBar1: TTrackBar
+            Align = Top
+            CanParentFocus = True
+            Max = 2000.000000000000000000
+            Orientation = Horizontal
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            OnChange = Switch1Switch
+          end
+        end
+      end
+      object MapView1: TMapView
+        Align = Client
+        Size.Width = 392.000000000000000000
+        Size.Height = 472.000000000000000000
+        Size.PlatformDefault = False
+        object ComboEdit1: TComboEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Horizontal
+          StyleLookup = 'comboeditstyle'
+          TabOrder = 0
+          ItemHeight = 19.000000000000000000
+          ItemIndex = -1
+          TextSettings.Font.Size = 18.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 14.000000000000000000
+          StyledSettings = [Family, Style, FontColor]
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 372.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object AboutMeTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'About Me'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object MemoAboutMe: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        StyledSettings = [Family, Style, FontColor]
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.WordWrap = True
+        OnChangeTracking = MemoAboutMeChangeTracking
+        Align = Client
+        Size.Width = 392.000000000000000000
+        Size.Height = 497.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnEnter = MemoAboutMeEnter
+        Viewport.Width = 392.000000000000000000
+        Viewport.Height = 497.000000000000000000
+      end
+      object RectBtnSaveBio: TRectangle
+        Align = Bottom
+        Enabled = False
+        Fill.Color = xFFFF3F55
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 552.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 25.000000000000000000
+        YRadius = 25.000000000000000000
+        object Text6: TText
+          Align = Client
+          Size.Width = 352.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Save'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.WordWrap = False
+          OnClick = Text6Click
+        end
+      end
+      object Text7: TText
+        Align = Bottom
+        Margins.Right = 20.000000000000000000
+        Position.Y = 497.000000000000000000
+        Size.Width = 372.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        Text = '150'
+        TextSettings.HorzAlign = Trailing
+      end
+    end
+    object ChangePasswordTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Change Password'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object RectBtnSavePass: TRectangle
+        Align = Top
+        Enabled = False
+        Fill.Color = xFFFF3F55
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 145.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 25.000000000000000000
+        YRadius = 25.000000000000000000
+        object TxtBtnChangePass: TText
+          Align = Client
+          Size.Width = 352.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Change Password'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.WordWrap = False
+          OnClick = TxtBtnChangePassClick
+        end
+      end
+      object EdNewPass: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        StyleLookup = 'editstyle'
+        TabOrder = 24
+        Password = True
+        TextSettings.Font.Size = 18.000000000000000000
+        Position.Y = 30.000000000000000000
+        Margins.Top = 30.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'New password'
+        StyledSettings = [Family, Style, FontColor]
+        OnChangeTracking = EdNewPassChangeTracking
+      end
+      object EdConfirmPass: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        StyleLookup = 'editstyle'
+        TabOrder = 0
+        Password = True
+        TextSettings.Font.Size = 18.000000000000000000
+        Position.Y = 77.000000000000000000
+        Margins.Top = -1.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Confirm password'
+        StyledSettings = [Family, Style, FontColor]
+        OnChangeTracking = EdNewPassChangeTracking
+      end
+    end
+    object PushNotificationsTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Push Notifications'
+      ExplicitSize.cx = 116.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout4: TLayout
+        Align = Top
+        Margins.Top = 20.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Text8: TText
+          Align = Left
+          Margins.Left = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Size.Width = 305.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Messages'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.HorzAlign = Leading
+        end
+        object SwNotifMessages: TSwitch
+          Align = Right
+          IsChecked = False
+          Margins.Top = 7.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 7.000000000000000000
+          Position.X = 304.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 78.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnSwitch = SwNotifMessagesSwitch
+        end
+      end
+      object Layout5: TLayout
+        Align = Top
+        Margins.Top = -1.000000000000000000
+        Position.Y = 69.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Text9: TText
+          Align = Left
+          Margins.Left = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Size.Width = 305.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Listing updates'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.HorzAlign = Leading
+        end
+        object SwNotifListUpdates: TSwitch
+          Align = Right
+          IsChecked = False
+          Margins.Top = 7.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 7.000000000000000000
+          Position.X = 304.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 78.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnSwitch = SwNotifListUpdatesSwitch
+        end
+      end
+      object Layout6: TLayout
+        Align = Top
+        Margins.Top = -1.000000000000000000
+        Position.Y = 118.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Text10: TText
+          Align = Left
+          Margins.Left = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Size.Width = 305.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Activity'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.HorzAlign = Leading
+        end
+        object SwNotifActivity: TSwitch
+          Align = Right
+          IsChecked = False
+          Margins.Top = 7.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 7.000000000000000000
+          Position.X = 304.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 78.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnSwitch = SwNotifActivitySwitch
+        end
+      end
+    end
+    object WebBrowserTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      ExplicitSize.cx = 98.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object WebBrowser1: TWebBrowser
+        Align = Client
+        Size.Width = 392.000000000000000000
+        Size.Height = 622.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object EarnPointsTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'How to earn points'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout1: TLayout
+        Align = Top
+        Size.Width = 392.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Text12: TText
+          Align = Client
+          Size.Width = 349.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Personal info won'#39't be shared with other users'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.FontColor = claDarkgray
+          TextSettings.WordWrap = False
+          TextSettings.HorzAlign = Leading
+        end
+        object LockImage: TImage
+          MultiResBitmap.Height = 48
+          MultiResBitmap.Width = 48
+          MultiResBitmap.LoadSize = 2
+          MultiResBitmap = <
+            item
+              Width = 28
+              Height = 32
+              PNG = {
+                89504E470D0A1A0A0000000D494844520000001C00000020080600000001B518
+                42000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                019649444154484BD5963B4A04411086C767BEA927F00C9A091A091A68E60904
+                BD8306A6A2A017F01CA62E1A2B82898282D9266E22F8FABF9EAE61945DA7BB9D
+                76D91FBE9DDA9EAEAA7ED4345D046A5A6C8833712B5E3CD8B4F16E46B4A27571
+                273E1BA0CF9A48D684381416F0466C8B7931EBC1A68D77F4F9100702DF6859B2
+                57B12BA6C430F18E3EF4C587A45162192DD90A0D815A16F830D3E0E565F36DCF
+                1875ACF0C19718418544C5E1702D7E5BC661A2A26D4F3769A86BD23FEBB2A538
+                15EFA519A53771529A61CBCAB7C5E8A8C054E14B8C7BF7AF417CD074A6EC5385
+                2F3128A046D111FEAA817106ED61569190E91F899EA88FC846988A09FB4990C3
+                6D13C6CFCEB93816D5CC16F993490B821C3D0E590C9474E046C8E51949D1FCAB
+                C622E1AA78140FDE8E169B698513A267613ED8A1723E2933AC0F2E66A0956CB4
+                A16219CD67898640399FD4EF30D9676C3E8B0BD12DCD388DE468EB634873FE99
+                431DFFEC93F0B2B4DD6D2D97B6FCF38A1F2B73EE1F3BC246D38688454CBB9157
+                27D39EA02127FBE29BC87E2EECD6D606C422A69F59517C01426AC3A9C7D77A8A
+                0000000049454E44AE426082}
+              FileName = 
+                'G:\Shared Economy\Graphics\graphicriver-8639072-1700-simple-line' +
+                '-icons\lifestyle and business\PNG\black\32\lock.png'
+            end>
+          Align = Left
+          Opacity = 0.400000005960464400
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 18.000000000000000000
+          Size.Height = 14.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object ListBox2: TListBox
+        Align = Top
+        Position.Y = 54.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 580.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ShowScrollBars = False
+        DisableFocusEffect = True
+        ItemHeight = 48.000000000000000000
+        Images = DataModule1.SESpecificImages
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 392.000000000000000000
+        Viewport.Height = 580.000000000000000000
+        object LbiScoreEmail: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = '+25'
+          ItemData.Accessory = aMore
+          ImageIndex = 10
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 0
+          Text = 'Email'
+          OnClick = LbiEmailClick
+        end
+        object LbiScorePhotoID: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = '+25'
+          ItemData.Accessory = aMore
+          ImageIndex = 11
+          Position.Y = 48.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 1
+          Text = 'Photo ID/Drivers License'
+          OnClick = LbiPhotoIDClick
+        end
+        object ListBoxGroupHeader4: TListBoxGroupHeader
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claGray
+          StyledSettings = [Family, Style, Other]
+          Position.Y = 96.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Line1: TLine
+            Align = Client
+            LineType = Diagonal
+            Margins.Top = 24.000000000000000000
+            Margins.Bottom = 23.000000000000000000
+            Size.Width = 388.000000000000000000
+            Size.Height = 1.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claDarkgray
+          end
+        end
+        object ListBoxItem18: TListBoxItem
+          StyledSettings = [Family, Style, Other]
+          Margins.Left = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 144.000000000000000000
+          Size.Width = 368.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 8
+          Text = 'ADD YOUR'
+          OnClick = ListBoxItem8Click
+        end
+        object LbiScorePhoneNumber: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = '+15'
+          ItemData.Accessory = aMore
+          ImageIndex = 31
+          Position.Y = 192.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 2
+          Text = 'Phone number'
+          OnClick = LbiPhoneNumberClick
+        end
+        object LbiScoreProfilePicture: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Other]
+          ItemData.Detail = '+10'
+          ItemData.Accessory = aMore
+          ImageIndex = 15
+          Position.Y = 240.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 9
+          Text = 'Profile picture'
+          OnClick = LbiPhotoClick
+        end
+        object ListBoxGroupHeader3: TListBoxGroupHeader
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claGray
+          StyledSettings = [Family, Style, Other]
+          Position.Y = 288.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object Line2: TLine
+            Align = Client
+            LineType = Diagonal
+            Margins.Top = 24.000000000000000000
+            Margins.Bottom = 23.000000000000000000
+            Size.Width = 388.000000000000000000
+            Size.Height = 1.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claDarkgray
+          end
+        end
+        object ListBoxItem12: TListBoxItem
+          StyledSettings = [Family, Style, Other]
+          Margins.Left = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 336.000000000000000000
+          Size.Width = 368.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = 'RENT'
+          OnClick = ListBoxItem8Click
+        end
+        object LbiScoreFirstRentComplete: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = '+5'
+          ImageIndex = 15
+          Position.Y = 384.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 6
+          Text = 'First rent complete'
+          OnClick = LbiScorePost2ItemsClick
+        end
+        object LbiScorePost2Items: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          StyledSettings = [Family, Style, Other]
+          ItemData.Detail = '+20'
+          ImageIndex = 15
+          Position.Y = 432.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 5
+          Text = 'Post 2 items to rent'
+          OnClick = LbiScorePost2ItemsClick
+          object Text16: TText
+            Align = Bottom
+            Margins.Left = 58.000000000000000000
+            Position.X = 58.000000000000000000
+            Position.Y = 28.000000000000000000
+            Size.Width = 330.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            Text = '+10 pts for each listing (up to 20 pts)'
+            TextSettings.Font.Size = 10.000000000000000000
+            TextSettings.FontColor = claDarkgray
+            TextSettings.HorzAlign = Leading
+            TextSettings.VertAlign = Trailing
+          end
+        end
+      end
+      object Text13: TText
+        Align = Top
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 28.000000000000000000
+        Size.Width = 372.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'VERIFY WITH'
+        TextSettings.Font.Family = 'Arial'
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.FontColor = claDarkgray
+        TextSettings.WordWrap = False
+        TextSettings.HorzAlign = Leading
+      end
+    end
+    object PhoneTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Change phone number'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Rectangle2: TRectangle
+        Align = Top
+        Enabled = False
+        Fill.Color = xFFFF3F55
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 146.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 25.000000000000000000
+        YRadius = 25.000000000000000000
+        object Text15: TText
+          Align = Client
+          Size.Width = 352.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Save'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.WordWrap = False
+          OnClick = Text15Click
+        end
+      end
+      object EdNewPhoneNumber: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        StyleLookup = 'clearingeditstyle'
+        TabOrder = 0
+        KeyboardType = PhonePad
+        TextSettings.Font.Size = 18.000000000000000000
+        Position.Y = 78.000000000000000000
+        Margins.Top = 30.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'New phone number'
+        StyledSettings = [Family, Style, FontColor]
+        OnChangeTracking = EdNewPhoneNumberChangeTracking
+      end
+      object Text14: TText
+        Align = Top
+        Margins.Left = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Size.Width = 372.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Current phone no.: '
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.HorzAlign = Leading
+        object TxtCurrentPhoneNo: TText
+          Align = Right
+          Position.X = 42.000000000000000000
+          Size.Width = 330.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object LanguageTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Change Name'
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout8: TLayout
+        Align = Top
+        Margins.Top = 20.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Text20: TText
+          Align = Left
+          Margins.Left = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Size.Width = 157.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Language:'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.HorzAlign = Leading
+        end
+        object cbLanguages: TComboBox
+          Align = Right
+          Items.Strings = (
+            'Default - English'
+            'Fran'#231'ais')
+          ItemIndex = 0
+          Margins.Right = 20.000000000000000000
+          Position.X = 200.000000000000000000
+          Size.Width = 172.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnChange = cbLanguagesChange
+        end
+      end
+    end
+    object ThemeTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'ThemeTab'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout7: TLayout
+        Align = Top
+        Margins.Top = 20.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 392.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Text17: TText
+          Align = Left
+          Margins.Left = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Size.Width = 157.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Theme:'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.HorzAlign = Leading
+        end
+        object StyleBox: TComboBox
+          Align = Right
+          Items.Strings = (
+            'Default'
+            'Air'
+            'Amakris'
+            'Aqua'
+            'Blend'
+            'Dark'
+            'GoldenGraphite'
+            'Light'
+            'RubyGraphite')
+          ItemIndex = 0
+          Margins.Right = 20.000000000000000000
+          Position.X = 192.000000000000000000
+          Size.Width = 180.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnChange = StyleBoxChange
+        end
+      end
+    end
+  end
+  object LocationSensor1: TLocationSensor
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 315
+    Top = 128
+  end
+end
